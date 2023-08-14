@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoVizta"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logovizta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"/>
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12dp"
+        android:layout_below="@id/logoVizta"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedNomorHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nomor HP"
+        style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+        android:layout_below="@id/tvLogin"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNomorHP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/OTPLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="6"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tvLogin">
+
+        <EditText
+            android:id="@+id/txtOTP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/txtOTP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/txtOTP3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/txtOTP4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/txtOTP5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/txtOTP6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="1"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:digits="1234567890"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnNextLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/outlinedNomorHP"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Selanjutnya"
+        android:textSize="15dp"
+        android:backgroundTint="@color/orange"/>
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnNextLogin"
+        android:layout_marginTop="20dp"
+        android:text="saya belum punya akun, daftarkan saya"
+        android:textColor="@color/navy"
+        android:gravity="center"/>
+</RelativeLayout>

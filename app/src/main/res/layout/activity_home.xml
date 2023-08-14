@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="50dp"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/logoViztaHome"
+        android:layout_width="96dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logovizta"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tvNamaUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/logoViztaHome"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:text="Hi, Oki Herijanto"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvHPUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/logoViztaHome"
+        android:layout_below="@id/tvNamaUser"
+        android:layout_marginLeft="10dp"
+        android:gravity="right"
+        android:text="8164 Vizta Points"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/QRCodeUser"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/tvNamaUser"
+        android:src="@drawable/logovizta"/>
+
+    <RelativeLayout
+        android:id="@+id/pointLayout"
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_below="@id/logoViztaHome"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:background="@drawable/header_background"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <ImageView
+            android:id="@+id/mnMyPlaylist"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/myplaylist"
+            android:background="@drawable/header_background"/>
+
+        <TextView
+            android:id="@+id/lnMyPlaylist"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mnMyPlaylist"
+            android:text="Playlist"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/mnRemote"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/remote"
+            android:layout_toRightOf="@id/mnMyPlaylist"
+            android:background="@drawable/header_background"
+            android:layout_marginLeft="23dp"/>
+
+        <TextView
+            android:id="@+id/lnRemote"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mnRemote"
+            android:layout_toRightOf="@id/lnMyPlaylist"
+            android:text="Remote"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"/>
+
+        <ImageView
+            android:id="@+id/mnRequest"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/request"
+            android:layout_toRightOf="@id/mnRemote"
+            android:background="@drawable/header_background"
+            android:layout_marginLeft="23dp"/>
+
+        <TextView
+            android:id="@+id/lnRequest"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mnRequest"
+            android:layout_toRightOf="@id/lnRemote"
+            android:text="Song Req"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"/>
+
+        <ImageView
+            android:id="@+id/mnOutlet"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/outlet"
+            android:layout_toRightOf="@id/mnRequest"
+            android:background="@drawable/header_background"
+            android:layout_marginLeft="23dp"/>
+
+        <TextView
+            android:id="@+id/lnOutlet"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mnRequest"
+            android:layout_toRightOf="@id/lnRequest"
+            android:text="Outlets"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"/>
+
+        <ImageView
+            android:id="@+id/mnOther"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/outlet"
+            android:layout_toRightOf="@id/mnOutlet"
+            android:background="@drawable/header_background"
+            android:layout_marginLeft="23dp"/>
+
+        <TextView
+            android:id="@+id/lnOther"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mnRequest"
+            android:layout_toRightOf="@id/lnOutlet"
+            android:text="Outlets"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="23dp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
